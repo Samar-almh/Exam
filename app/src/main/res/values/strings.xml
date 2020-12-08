@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <string name="done">done</string>
+    <string name="in_progress">in_progress</string>
+    <string name="to_do">to_do</string>
+    <string name="task_title_hint">ادخل عنوان المهمة</string>
+    <string name="task_details_label"> ادخل تفاصيل المهمة</string>
+    <string name="task_date">تاريخ إنتهاء المهمة</string>
+    <string name="task_title">عنوان المهمة</string>
+    <string name="new_task">مهمة جديدة</string>
+</resources>
