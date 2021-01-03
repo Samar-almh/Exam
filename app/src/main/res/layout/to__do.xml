@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="#1203DAC5">
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="290dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+
+        android:text="title"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/task_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/task_details"
+        android:layout_width="293dp"
+        android:layout_height="53dp"
+        android:text="details"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/task_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/task_date"
+        android:layout_width="174dp"
+        android:layout_height="33dp"
+        android:text="date"
+        android:textColor="#101010"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <ImageButton
+        android:id="@+id/Do_image_Button"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:background="#03DAC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174"
+        app:srcCompat="@drawable/ic_baseline_done_24" />
+
+    <ImageButton
+        android:id="@+id/Do_image_Button2"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:background="#FF03DAC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554"
+        app:srcCompat="@drawable/ic_baseline_done_all_24" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="56dp"
+        android:layout_height="45dp"
+        android:background="#FF03DAC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toEndOf="@+id/task_date"
+        app:layout_constraintTop_toBottomOf="@+id/Do_image_Button2"
+        app:layout_constraintVertical_bias="0.416"
+        app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

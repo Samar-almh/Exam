@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Exam</string>
+    <string name="done">done</string>
+    <string name="in_progress">in_progress</string>
+    <string name="to_do">to_do</string>
+    <string name="task_title_hint">Enter task title</string>
+    <string name="task_details_label"> Enter task details</string>
+    <string name="task_date">Enter task date</string>
+
+    <string name="task_solved_label">Solved</string>
+    <string name="new_task">New task</string>
+</resources>
