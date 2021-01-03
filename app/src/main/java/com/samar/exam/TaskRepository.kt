@@ -19,8 +19,6 @@ class TaskRepository private constructor(context: Context) {
 
     private val taskDao = database.taskDao()
     private val executor = Executors.newSingleThreadExecutor()
-
-
     fun getTasks(): LiveData<List<Task>> = taskDao.getTasks()
     fun getTodo(): LiveData<List<Task>> = taskDao.getTodo("To-Do")
     fun getInpro(): LiveData<List<Task>> = taskDao.getInpro("In-Progress")
